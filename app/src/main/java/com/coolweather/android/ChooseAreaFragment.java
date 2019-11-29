@@ -160,7 +160,7 @@ public class ChooseAreaFragment extends Fragment {
             listView.setSelection(0);
             currentLevel=LEVEL_CITY;
         }else {
-            int provinceCode=selectedProvince.getId();
+            int provinceCode=selectedProvince.getProvinceCode();
             String address="http://guolin.tech/api/china/" + provinceCode;
             queryFromService(address,"city");
         }
